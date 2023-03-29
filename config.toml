@@ -1,0 +1,60 @@
+baseURL = "https://anton.tools"
+theme = "risotto"
+title = "tonidx"
+author = "datboi"
+copyright = "© 2022–2023 [Dat Boi](https://datboi420.t.me)."
+languageCode = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+
+# Automatically add content sections to main menu
+sectionPagesMenu = "main"
+
+[params]
+noindex = false
+
+[params.theme]
+palette = "base16-dark"
+
+[params.about]
+title = "tonindexer"
+description = "The project to index data from TON blockchain."
+logo = "images/database-solid.svg"
+
+# Sidebar: social links
+# Available icon sets:
+# * FontAwesome 6 <https://fontawesome.com/> ('fa-brands', 'fa-normal', or 'fa-solid' for brands)
+# * Academicons <https://jpswalsh.github.io/academicons> ('ai ai-')
+
+[[params.socialLinks]]
+icon = "fa-brands fa-telegram"
+title = "GitHub"
+url = "https://t.me/tonindexer"
+
+[[params.socialLinks]]
+icon = "fa-brands fa-github"
+title = "GitHub"
+url = "https://github.com/tonindexer"
+
+[[params.socialLinks]]
+icon = "fa-solid fa-envelope"
+title = "Email"
+url = "mailto:datboi@anton.tools"
+
+[[params.socialLinks]]
+icon = "fa-solid fa-filter"
+title = "API docs"
+url = "https://anton.tools/api/v0/swagger"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
