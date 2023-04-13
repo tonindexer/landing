@@ -1,6 +1,6 @@
 baseURL = "https://anton.tools"
 theme = "risotto"
-title = "tonidx"
+title = "tonindexer"
 author = "datboi"
 copyright = "© 2022–2023 [Dat Boi](https://datboi420.t.me)."
 languageCode = "en"

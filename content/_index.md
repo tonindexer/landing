@@ -1,4 +1,4 @@
-# tonidx
+# anton
 
 The project fetches data from the TON blockchain and puts it in PostgreSQL and ClickHouse databases.
 
@@ -7,7 +7,7 @@ The project fetches data from the TON blockchain and puts it in PostgreSQL and C
 Our project is building an indexer for the TON blockchain that gathers and analyzes data from contracts and tokens, providing insights into the network's activity. 
 Our goal is to help developers and users understand how the blockchain is being used, as well as make it possible for developers to add their own contracts with their own message schemas to our explorer.
 
-If you want to try it, go to [Swagger API documentation](https://anton.tools/api/v0/swagger) and [API query examples](https://github.com/tonindexer/anton/blob/main/docs/API.md).
+If you want to try it, go to [GitHub](https://github.com/tonindexer/anton), [Swagger API documentation](https://anton.tools/api/v0/swagger) and [API query examples](https://github.com/tonindexer/anton/blob/main/docs/API.md).
 
 ## How does it work?
 
@@ -38,41 +38,3 @@ Transfer payload has the following [schema](https://github.com/xssnick/tonutils-
 If an arbitrary contract has a `get_nft_data` method, we can parse the operation id of messages sent to and from this contract.
 If the operation id matches a known id, such as `0x5fcc3d14`, we attempt to parse the message data using the known schema
 (new owner of NFT in the given example).
-
-## Installation
-
-```shell
-git clone https://github.com/tonindexer/anton
-cd anton
-docker-compose build
-```
-
-## Configuration
-
-Docker compose installation requires some environment variables.
-
-```shell
-# Create .env file
-cp .env.example .env
-# Configure env
-nano .env
-```
-
-### env
-
-| Name          | Description                       |
-|---------------|-----------------------------------|
-| `DB_NAME`     | Database name                     |
-| `DB_USERNAME` | Database username                 |
-| `DB_PASSWORD` | Database password                 |
-| `FROM_BLOCK`  | Master chain seq_no to start from |
-| `LITESERVERS` | Lite servers to connect to        |
-| `DEBUG_LOGS`  | Debug logs enabled                |
-
-## Starting
-
-```shell
-docker-compose up -d
-docker-compose logs -f # reading logs
-```
-
