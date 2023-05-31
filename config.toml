@@ -42,7 +42,7 @@ title = "Email"
 url = "mailto:datboi@anton.tools"
 
 [[params.socialLinks]]
-icon = "fa-solid fa-brackets-curly"
+icon = "fa-solid fa-code"
 title = "API docs"
 url = "https://anton.tools/api/v0/swagger"
 
