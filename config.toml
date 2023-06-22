@@ -21,15 +21,15 @@ title = "tonindexer"
 description = "The project to index data from TON blockchain."
 logo = "images/database-solid.svg"
 
-# Sidebar: social links
-# Available icon sets:
-# * FontAwesome 6 <https://fontawesome.com/> ('fa-brands', 'fa-normal', or 'fa-solid' for brands)
-# * Academicons <https://jpswalsh.github.io/academicons> ('ai ai-')
+[[params.socialLinks]]
+icon = "fa-solid fa-infinity"
+title = "Apache Superset"
+url = "https://superset.anton.tools/dashboard/list"
 
 [[params.socialLinks]]
-icon = "fa-brands fa-telegram"
-title = "GitHub"
-url = "https://t.me/tonindexer"
+icon = "fa-solid fa-code"
+title = "API docs"
+url = "https://anton.tools/api/v0/swagger"
 
 [[params.socialLinks]]
 icon = "fa-brands fa-github"
@@ -37,22 +37,14 @@ title = "GitHub"
 url = "https://github.com/tonindexer"
 
 [[params.socialLinks]]
+icon = "fa-brands fa-telegram"
+title = "GitHub"
+url = "https://t.me/tonindexer"
+
+[[params.socialLinks]]
 icon = "fa-solid fa-envelope"
 title = "Email"
 url = "mailto:datboi@anton.tools"
-
-[[params.socialLinks]]
-icon = "fa-solid fa-code"
-title = "API docs"
-url = "https://anton.tools/api/v0/swagger"
-
-[menu]
-
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 10
 
 [taxonomies]
 category = "categories"
