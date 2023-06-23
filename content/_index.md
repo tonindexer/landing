@@ -28,7 +28,7 @@ Contract standards also specify [TL-B constructor tags](https://ton.org/docs/lea
 So you if you know standard of a given contract, you can determine the type of message to it (for example, NFT item transfer) by parsing the first 32 bits of message body.
 
 Anton allows you to define the contract interface in just one JSON schema.
-Format of every schema is described in detail in [abi/README.md](abi/README.md).
+Format of every schema is described in detail in [abi/README.md](https://github.com/tonindexer/anton/blob/main/abi/README.md).
 Every schema comprises contract get-methods, as well as incoming and outgoing message schemas for the contract.
 Once contract interfaces are defined and stored in the database, Anton begins scanning new blocks on the network.
 The tool stores every account state, transaction, and message in the database.
@@ -36,5 +36,5 @@ For get-methods without arguments in the contract interface, Anton emulates thes
 When a message is sent to a known contract interface, Anton attempts to match the message to a known schema by comparing the parsed operation ID.
 If the message is successfully parsed using the identified schema, Anton also stores the parsed data.
 
-To explore contract interfaces known to this project, visit the [abi/known](/abi/known) directory.
+To explore contract interfaces known to this project, visit the [abi/known](https://github.com/tonindexer/anton/blob/main/abi/known) directory.
 This will provide you with an understanding of the various contract interfaces already supported and serve as examples for adding your own.
